@@ -1,0 +1,131 @@
+/* Navbar container styles */
+/* Logo container styles */
+.logo {
+  display: flex;
+  align-items: center; /* Center the logo vertically */
+  margin-top: 14px;
+}
+
+/* Logo image styles */
+.logo img {
+  max-width: 150px; /* Set a maximum width for the logo */
+  height: auto; /* Maintain aspect ratio */
+  transition: all 0.3s ease-in-out; /* Smooth resizing effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo img {
+    max-width: 100px; /* Reduce logo size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    max-width: 80px; /* Further reduce size for very small screens */
+  }
+}
+
+
+.navbar-container {
+  width: 95.5%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: transparent; /* Adjust background opacity */
+  backdrop-filter: blur(0px); /* Adds a blur effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  display: flex; /* Flexbox to align the navbar content */
+  justify-content: space-between; /* Space between logo and links */
+  align-items: center; /* Center items vertically */
+  padding: 0 20px; /* Add horizontal padding */
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 1rem;
+}
+
+/* Logo styles */
+.logo a {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Ysabeau SC", serif;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo a:hover {
+  color: #00aaff; /* Highlight color for hover */
+}
+
+/* Navigation links styles */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* Space between links */
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Ysabeau SC", serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+  padding: 10px 15px; /* Padding around links */
+  border: 2px solid transparent; /* Set a transparent border initially */
+  border-radius: 5px; /* Optional, add rounded corners */
+}
+
+.nav-links a:hover {
+  color: #00aaff; /* Highlight color for hover */
+  border-color: transparent; /* Change border color on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-links {
+      flex-direction: column;
+      background: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 70px;
+      right: 0;
+      padding: 10px 20px;
+      display: none;
+  }
+
+  .nav-links.show {
+      display: flex;
+  }
+}
+
+/* Hamburger menu button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+      display: flex;
+  }
+}
