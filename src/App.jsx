@@ -6,6 +6,7 @@ import Tagline from './Components/Text/Tagline';
 import GetStarted from './Components/GetStarted/GetStarted.jsx';
 import Cards from './Components/Cards/Cards';
 import Pricing from './Components/Pricing/Pricing';
+import { Developers } from './Components/DevCard/Developers.jsx';
 
 function Home() {
   return (
@@ -48,6 +49,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/developers" element={<Developers/>} />
         </Routes>
       </div>
     </Router>

@@ -23,7 +23,7 @@ const Navbar = () => {
           <a href="#about"><Link to="/About">About</Link></a>
           <a href="#services"><Link to="/Services">Services</Link></a>
           <a href="#pricing"><Link to="/Pricing">Pricing</Link></a>
-          <a href="#developers">Developers</a>
+          <a href="#developers"><Link to="/Developers">Developers</Link></a>
           <a href="#contact">Contact</a>
         </div>
         <div className="hamburger" onClick={toggleSidebar}>
