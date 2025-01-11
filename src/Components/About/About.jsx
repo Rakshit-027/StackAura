@@ -1,7 +1,7 @@
 import React from 'react';
 import { Users, Rocket, Code2, Trophy, ArrowRight } from 'lucide-react';
 import './About.css';
-
+import { Link } from 'react-scroll';
 const About = () => {
   return (
     <div className="about-container">
@@ -70,10 +70,14 @@ const About = () => {
       <section className="cta-section">
         <h2>Ready to Start Your Project?</h2>
         <p>Let's transform your vision into reality</p>
-        <button className="cta-button">
+        <Link to='pricing' 
+                        smooth={true}
+                        duration={700}
+                        spy={true}
+                        offset={-50}className="cta-button">
           Get Started
           <ArrowRight className="arrow-icon" />
-        </button>
+        </Link>
       </section>
     </div>
   );

@@ -2,6 +2,8 @@ import React from 'react';
 import { Code2, Star, Laptop } from 'lucide-react';
 import './Home.css';
 import GetStarted from '../Mini-Components/GetStarted/GetStarted'
+import { Link } from 'react-scroll';
+
 
 const Tagline = ({ heading, sub }) => (
   <div className="tagline-container">
@@ -40,9 +42,13 @@ function Home() {
               <Tagline
                 heading="Transforming Your Ideas into Stunning Digital Experiences"
                 sub="We Build Tailored Websites That Drive Success and Engage Your Audience"
-              /> <div className="get">
+              /> <Link to='pricing' 
+                smooth={true}
+                duration={700}
+                spy={true}
+                offset={-50} className="get">
                 <GetStarted />
-              </div>
+                </Link>
               
             </div>
             

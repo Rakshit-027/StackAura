@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-
 const GetStarted = () => {
   return (
     <StyledWrapper>
-      <button>
+      <button >
         Get Started
       </button>
     </StyledWrapper>
