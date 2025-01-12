@@ -159,3 +159,6 @@
   .submit-button:hover {
     background-color: inherit;
   }
+  .footer{
+    margin-top: 25px;
+  }

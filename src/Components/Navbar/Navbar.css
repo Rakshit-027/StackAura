@@ -15,7 +15,7 @@
 }
 
 .nav-container {
-  max-width: 1200px;
+  max-width: 1700px;
   margin: 0 auto;
   padding: 1rem 2rem;
   display: flex;
@@ -30,18 +30,36 @@
 }
 
 .Nav-img{
- height: 40px; 
- margin-bottom: -15px;
+ height: 60px; 
+ margin-bottom: -25px;
+ transition: height 0.3s ease, margin-bottom 0.3s ease;
 }
+
+@media (max-width: 768px) {
+  .Nav-img {
+    height: 50px; /* Adjust the height */
+    margin-bottom: -10px; /* Adjust the margin */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .Nav-img {
+    height: 40px; /* Adjust the height further for smaller devices */
+    margin-bottom: -15px; /* Adjust the margin */
+  }
+}
+
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: center;
 }
 
 .nav-link {
   color: #4b5563;
+  font-size: 25px;
   font-weight: 500;
   text-decoration: none;
   transition: color 0.3s ease;

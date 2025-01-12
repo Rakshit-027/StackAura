@@ -11,7 +11,7 @@ const PricingCard = ({ plan }) => (
       </div>
       <h3>{plan.name}</h3>
       <div className="plan-price">
-        <span className="currency">$</span>
+        <span className="currency"></span>
         <span className="amount">{plan.price}</span>
         <span className="duration">{plan.duration}</span>
       </div>
@@ -41,7 +41,7 @@ const Pricing = () => {
   const plans = [
     {
       name: "Silver Plan",
-      price: "500 - 1,500",
+      price: "₹15,000–₹30,000",
       duration: "",
       deliveryTime: "1-2 weeks",
       icon: Code2,
@@ -56,7 +56,7 @@ const Pricing = () => {
     },
     {
       name: "Gold Plan",
-      price: "2,000 - 5,000",
+      price: "₹40,000–₹75,000",
       duration: "",
       deliveryTime: "3-5 weeks",
       icon: Globe,
@@ -72,7 +72,7 @@ const Pricing = () => {
     },
     {
       name: "Platinum Plan",
-      price: "6,000+",
+      price: "₹2,50,000+ ",
       duration: "",
       deliveryTime: "6-10 weeks",
       icon: Cpu,
@@ -92,9 +92,9 @@ const Pricing = () => {
       deliveryTime: "Ongoing support",
       icon: Wrench,
       features: [
-        "Basic:$50/mo - Updates & security",
-        "Standard:$150/mo - Content & SEO",
-        "Premium:$400/mo - analytics",
+        "Basic:₹2,500+/mo - Updates & security",
+        "Standard:₹15,000+/mo - Content & SEO",
+        "Premium:₹25,000+/mo - analytics",
         "24/7 support (Premium)",
         "Monthly performance reports"
       ],
